@@ -1,12 +1,12 @@
-# Python Quiz Game 🧠🎮
+# Py‑Snake Game 🐍
 
-A simple yet engaging **Python-based Quiz Game** built using the console. The game asks multiple-choice questions, evaluates answers, and provides the final score.
+A classic Snake game built in **Python**, featuring responsive controls, growing snake body, and score tracking. Slide the snake around, eat food, avoid hitting walls or yourself!
 
 ---
 
 ## Demo / Preview
 
-![Game Screenshot](game_video.gif)
+![Game Preview](game-video.gif)
 
 ---
 
@@ -17,7 +17,7 @@ A simple yet engaging **Python-based Quiz Game** built using the console. The ga
 - [Game Rules](#game-rules)  
 - [Installation](#installation)  
 - [Running the Game](#running-the-game)  
-- [Usage](#usage)  
+- [Controls](#controls)  
 - [Future Improvements](#future-improvements)  
 - [Contributing](#contributing)  
 - [License](#license)  
@@ -26,83 +26,102 @@ A simple yet engaging **Python-based Quiz Game** built using the console. The ga
 
 ## Features
 
-- Console-based interactive quiz.  
-- Multiple-choice questions with clear options.  
-- Immediate feedback after each answer.  
-- Tracks score throughout the game.  
-- Beginner-friendly Python project.  
+- Snake moves in 4 directions across a grid.  
+- Food randomly spawns; eating food increases the snake’s length.  
+- Incremental score increases as you eat food.  
+- Game Over when snake runs into wall or into itself.  
+- Clean, simple visuals using Python.  
 
 ---
 
 ## Project Structure
 
 ```
-py-quiz-game/
-│── quiz_game.py        # Main script to run the quiz
-│── questions.json      # Stores quiz questions and options (if applicable)
-│── Demo.png            # Screenshot of the game
-│── README.md           # Project documentation
+py-snake-game/
+├── main.py           # Main loop and game management  
+├── snake.py          # Snake class: movement, growth, collision  
+├── food.py           # Food class: spawning food at random positions  
+├── scoreboard.py     # Track and display the player’s score  
+├── game_video.gif    # Preview / demo GIF  
+├── README.md         # This file  
+└── .gitignore        # Files/folders to ignore in version control
 ```
 
 ---
 
 ## Game Rules
 
-- The game presents multiple-choice questions one by one.  
-- Player selects the answer by entering the correct option (e.g., A, B, C, or D).  
-- Each correct answer earns **1 point**.  
-- Final score is displayed at the end of the game.  
+- Use the controls to move the snake: up, down, left, right.  
+- Food appears at random spots; each food eaten increases your score by 1 and increases snake length.  
+- Hitting a wall (boundary) or the snake itself ends the game.  
+- Try to eat as much food as possible without crashing!
 
 ---
 
 ## Installation
 
-1. Clone this repository:
+1. Clone the repository:  
    ```bash
-   git clone https://github.com/ShaileshLambode/py-quiz-game.git
+   git clone https://github.com/ShaileshLambode/py-snake-game.git
+   cd py-snake-game
    ```
-2. Navigate to the project folder:
+
+2. Make sure you have Python installed (preferably Python 3.6+).  
+
+3. (Optional) If there are any dependencies, install them:  
    ```bash
-   cd py-quiz-game
-   ```
-3. Make sure you have Python 3 installed:
-   ```bash
-   python --version
+   pip install -r requirements.txt
    ```
 
 ---
 
 ## Running the Game
 
-Run the following command to start the game:
+To launch the game, run:
+
 ```bash
-python quiz_game.py
+python main.py
 ```
+
+Ensure you're in the project directory when running the command.
 
 ---
 
-## Usage
+## Controls
 
-- Start the script to begin the quiz.  
-- Answer the questions by typing the correct option.  
-- At the end, your total score will be displayed.  
+- **Up arrow** → move up  
+- **Down arrow** → move down  
+- **Left arrow** → move left  
+- **Right arrow** → move right  
+
+(If supporting WASD or others, list them accordingly.)
 
 ---
 
 ## Future Improvements
 
-- Add more questions from external files (e.g., JSON or database).  
-- Introduce difficulty levels (easy, medium, hard).  
-- Timer-based answering for extra challenge.  
-- GUI-based version using Tkinter or PyQt.  
+- Add pause / resume functionality.  
+- More levels or increased speed over time.  
+- Add obstacles in the play area.  
+- Save high scores to a file.  
+- GUI enhancements (graphics / better visuals).  
+- Mobile or touch support.  
 
 ---
 
 ## Contributing
 
-Contributions are welcome!  
-1. Fork the repository.  
-2. Create a new branch (`feature-branch`).  
-3. Commit your changes.  
-4. Push and create a Pull Request.  
+Contributions are very welcome! 🎉 Here’s how to get involved:
 
+1. Fork the repository.  
+2. Create a new branch:  
+   ```bash
+   git checkout -b feature‑name
+   ```
+3. Make your changes, test thoroughly.  
+4. Commit with clear messages.  
+5. Push your branch and make a Pull Request.  
+
+---
+
+## License
