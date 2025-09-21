@@ -6,7 +6,7 @@ A classic Snake game built in **Python**, featuring responsive controls, growing
 
 ## Demo / Preview
 
-![Game Preview](game-video.gif)
+![Game Preview](game_video.gif)
 
 ---
 
