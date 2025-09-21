@@ -6,7 +6,7 @@ A simple yet engaging **Python-based Quiz Game** built using the console. The ga
 
 ## Demo / Preview
 
-![Game Screenshot](game-video.gif)
+![Game Screenshot](game_video.gif)
 
 ---
 
